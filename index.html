@@ -1165,7 +1165,7 @@
           prática e impacto social real.</p>
       </div>
 
-      <div class="ext-cards-grid">
+      <div class="ext-cards-grid" data-carousel>
 
         <!-- Centro de Empreendedorismo -->
         <div class="ext-card reveal reveal-delay-1">
@@ -1301,7 +1301,7 @@
           acadêmico dos estudantes em situação de vulnerabilidade.</p>
       </div>
 
-      <div class="benefits-grid">
+      <div class="benefits-grid" data-carousel>
 
         <div class="benefit-card reveal reveal-delay-1">
           <div class="benefit-icon">
@@ -1469,11 +1469,33 @@
         <p class="section-subtitle">Conheça o Campus Cidade Ocidental da Universidade Federal de Goiás.</p>
       </div>
 
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4127.648460755984!2d-47.930688!3d-16.1083525!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935985000e192d19%3A0x294b835a127702e5!2sUniversidade%20Federal%20de%20Goi%C3%A1s!5e1!3m2!1spt-BR!2sbr!4v1777060938655!5m2!1spt-BR!2sbr"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" title="Mapa UFG Campus Cidade Ocidental"></iframe>
+      <div class="loc-bento">
+        <div class="loc-bento-card loc-bento-map reveal reveal-delay-1">
+          <div class="loc-bento-label">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>Localização</span>
+          </div>
+          <div class="loc-bento-media">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4127.648460755984!2d-47.930688!3d-16.1083525!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935985000e192d19%3A0x294b835a127702e5!2sUniversidade%20Federal%20de%20Goi%C3%A1s!5e1!3m2!1spt-BR!2sbr!4v1777060938655!5m2!1spt-BR!2sbr"
+              style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Mapa UFG Campus Cidade Ocidental"></iframe>
+          </div>
+        </div>
+
+        <div class="loc-bento-card loc-bento-video reveal reveal-delay-2">
+          <div class="loc-bento-label">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>Conheça o futuro Campus</span>
+          </div>
+          <div class="loc-bento-media">
+            <iframe
+              src="https://www.youtube.com/embed/9toboS8gEts?si=FAiqNvB5kA67Wdjp"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
       </div>
 
       <div class="info-bar">
@@ -1655,8 +1677,11 @@
     // ── Contador animado de estatísticas ─────────────────────────
     function animateCount(el) {
       const raw = el.textContent.trim();
+      const allNums = raw.match(/[\d,.]+/g);
+      if (!allNums) return;
+      // Se houver mais de um número (ex.: "R$ 8K - 18K"), não anima — apenas mantém o texto.
+      if (allNums.length > 1) return;
       const numMatch = raw.match(/[\d,.]+/);
-      if (!numMatch) return;
       const suffix = raw.replace(numMatch[0], '');
       const target = parseFloat(numMatch[0].replace(',', '.'));
       const isFloat = numMatch[0].includes(',');
@@ -1684,6 +1709,107 @@
     }, { threshold: 0.5 });
 
     document.querySelectorAll('.stat').forEach(el => statObserver.observe(el));
+
+    // ── Carrossel (Extensão e Benefícios) ────────────────────────
+    function initCarousel(container) {
+      const cards = Array.from(container.children);
+      if (cards.length === 0) return;
+
+      // Salva o conteúdo original e reconstrói o container
+      container.classList.add('carousel');
+      container.innerHTML = '';
+
+      const viewport = document.createElement('div');
+      viewport.className = 'carousel-viewport';
+      const track = document.createElement('div');
+      track.className = 'carousel-track';
+      cards.forEach(card => {
+        const slide = document.createElement('div');
+        slide.className = 'carousel-slide';
+        slide.appendChild(card);
+        track.appendChild(slide);
+      });
+      viewport.appendChild(track);
+
+      const prev = document.createElement('button');
+      prev.className = 'carousel-btn carousel-prev';
+      prev.setAttribute('aria-label', 'Anterior');
+      prev.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>';
+
+      const next = document.createElement('button');
+      next.className = 'carousel-btn carousel-next';
+      next.setAttribute('aria-label', 'Próximo');
+      next.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>';
+
+      const dots = document.createElement('div');
+      dots.className = 'carousel-dots';
+
+      container.appendChild(prev);
+      container.appendChild(viewport);
+      container.appendChild(next);
+      container.appendChild(dots);
+
+      let index = 0;
+
+      function visibleCount() {
+        const w = container.clientWidth;
+        if (w >= 1024) return 3;
+        if (w >= 640) return 2;
+        return 1;
+      }
+
+      function buildDots() {
+        dots.innerHTML = '';
+        const pages = Math.max(1, cards.length - visibleCount() + 1);
+        for (let i = 0; i < pages; i++) {
+          const d = document.createElement('button');
+          d.className = 'carousel-dot' + (i === index ? ' is-active' : '');
+          d.setAttribute('aria-label', 'Ir para slide ' + (i + 1));
+          d.addEventListener('click', () => { index = i; update(); });
+          dots.appendChild(d);
+        }
+      }
+
+      function update() {
+        const vc = visibleCount();
+        const maxIndex = Math.max(0, cards.length - vc);
+        if (index > maxIndex) index = maxIndex;
+        if (index < 0) index = 0;
+        const slideW = 100 / vc;
+        track.style.transform = `translateX(-${index * slideW}%)`;
+        track.querySelectorAll('.carousel-slide').forEach(s => {
+          s.style.flex = `0 0 ${slideW}%`;
+          s.style.maxWidth = `${slideW}%`;
+        });
+        prev.disabled = index === 0;
+        next.disabled = index >= maxIndex;
+        Array.from(dots.children).forEach((d, i) => d.classList.toggle('is-active', i === index));
+      }
+
+      prev.addEventListener('click', () => { index--; update(); });
+      next.addEventListener('click', () => { index++; update(); });
+
+      // Swipe touch
+      let startX = 0, deltaX = 0, dragging = false;
+      viewport.addEventListener('touchstart', e => { startX = e.touches[0].clientX; dragging = true; }, { passive: true });
+      viewport.addEventListener('touchmove', e => { if (dragging) deltaX = e.touches[0].clientX - startX; }, { passive: true });
+      viewport.addEventListener('touchend', () => {
+        if (!dragging) return;
+        if (Math.abs(deltaX) > 50) { deltaX < 0 ? index++ : index--; update(); }
+        dragging = false; deltaX = 0;
+      });
+
+      let resizeT;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeT);
+        resizeT = setTimeout(() => { buildDots(); update(); }, 120);
+      });
+
+      buildDots();
+      update();
+    }
+
+    document.querySelectorAll('[data-carousel]').forEach(initCarousel);
   </script>
 </body>
 
