@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFG — Campus Cidade Ocidental</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- NAVBAR                                                      -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <nav class="navbar">
+    <a href="#hero" class="navbar-logo">
+      <img src="https://files.cercomp.ufg.br/weby/up/1/o/UFG_colorido.png" alt="Logo UFG">
+      <span class="navbar-logo-text">Campus<br>Cidade Ocidental</span>
+    </a>
+
+    <div class="navbar-divider"></div>
+
+    <div class="navbar-links">
+      <a href="#hero">Home</a>
+      <a href="#ingresso">Ingresso</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#extensao">Extensão</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#localizacao">Localização</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- HERO                                                        -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <div class="module-card reveal reveal-scale" id="hero">
+    <section class="hero">
+      <!-- Hexágonos decorativos UFG-style -->
+      <svg class="hero-hex hero-hex-1" width="280" height="280" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="140,10 265,75 265,205 140,270 15,205 15,75" fill="none" stroke="white" stroke-width="2"/>
+        <polygon points="140,40 240,95 240,195 140,250 40,195 40,95" fill="none" stroke="white" stroke-width="1.5"/>
+        <polygon points="140,70 215,115 215,185 140,230 65,185 65,115" fill="none" stroke="white" stroke-width="1"/>
+      </svg>
+      <svg class="hero-hex hero-hex-2" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="100,8 188,55 188,145 100,192 12,145 12,55" fill="none" stroke="white" stroke-width="2"/>
+        <polygon points="100,35 165,72 165,128 100,165 35,128 35,72" fill="none" stroke="white" stroke-width="1.5"/>
+      </svg>
+      <svg class="hero-hex hero-hex-3" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="50,5 93,28 93,72 50,95 7,72 7,28" fill="none" stroke="white" stroke-width="2"/>
+      </svg>
+
+      <div class="hero-content">
+        <div class="hero-badge">Inscrições Abertas 2026</div>
+
+        <h1>Seu futuro começa na <span class="highlight">UFG</span></h1>
+
+        <p>O Campus Cidade Ocidental da Universidade Federal de Goiás oferece cursos de graduação gratuitos e de excelência. Descubra como ingressar e transforme a sua carreira.</p>
+
+        <div class="hero-btns">
+          <a href="https://prograd.ufg.br/p/20895-formas-de-ingresso" class="btn btn-primary">
+            Formas de Ingresso
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </a>
+          <a href="https://cidadeocidental.ufg.br/" class="btn btn-outline">
+            Conheça os Cursos
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </a>
+        </div>
+
+        <div class="stats-bar">
+          <div class="stat reveal reveal-delay-1">
+            <div class="stat-value">6</div>
+            <div class="stat-label">Cursos de Graduação</div>
+          </div>
+          <div class="stat reveal reveal-delay-2">
+            <div class="stat-value">100%</div>
+            <div class="stat-label">Gratuito</div>
+          </div>
+          <div class="stat reveal reveal-delay-3">
+            <div class="stat-value">5★</div>
+            <div class="stat-label">Nota MEC</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- INGRESSO                                                    -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <div class="module-card reveal reveal-scale" id="ingresso">
+    <section class="section">
+      <div class="section-header reveal">
+        <span class="section-badge reveal">Ingresso</span>
+        <h2 class="section-title">Formas de Ingresso na UFG</h2>
+        <p class="section-subtitle">Conheça todas as modalidades para ingressar nos cursos de graduação do Campus Cidade Ocidental.</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- ENEM / SiSU -->
+        <div class="card reveal reveal-delay-1">
+          <div class="card-icon blue">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          </div>
+          <h3>ENEM / SiSU</h3>
+          <p>Utilize sua nota do Exame Nacional do Ensino Médio para concorrer a uma vaga na UFG pelo Sistema de Seleção Unificada.</p>
+          <div class="card-details">
+            <div class="card-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Inscrição gratuita pelo portal sisu.mec.gov.br</span>
+            </div>
+            <div class="card-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Nota mínima de 450 pontos na prova e redação acima de zero</span>
+            </div>
+            <div class="card-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Período de inscrição: geralmente em janeiro/fevereiro</span>
+            </div>
+          </div>
+          <a href="https://sisu.mec.gov.br" target="_blank" class="card-link">
+            Saiba mais
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </a>
+        </div>
+
+        <!-- Vestibular UFG -->
+        <div class="card reveal reveal-delay-2">
+          <div class="card-icon green">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+          </div>
+          <h3>Vestibular UFG</h3>
+          <p>Processo seletivo próprio da universidade, com provas elaboradas pela UFG para preenchimento de vagas específicas.</p>
+          <div class="card-details">
+            <div class="card-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Prova de conhecimentos gerais e específicos</span>
+            </div>
+            <div class="card-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Edital publicado no site do Centro de Seleção da UFG</span>
+            </div>
+            <div class="card-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Vagas remanescentes e processos complementares</span>
+            </div>
+          </div>
+          <a href="https://cs.ufg.br" target="_blank" class="card-link">
+            Saiba mais
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </a>
+        </div>
+
+        <!-- Portador de Diploma -->
+        <div class="card reveal reveal-delay-3">
+          <div class="card-icon purple">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+          </div>
+          <h3>Portador de Diploma</h3>
+          <p>Já possui um diploma de graduação? Você pode ingressar em um novo curso da UFG por meio dessa modalidade especial.</p>
+          <div class="card-details">
+            <div class="card-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Diploma de graduação reconhecido pelo MEC</span>
+            </div>
+            <div class="card-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Processo seletivo simplificado com análise documental</span>
+            </div>
+            <div class="card-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Vagas condicionadas à disponibilidade do curso</span>
+            </div>
+          </div>
+          <a href="https://prograd.ufg.br" target="_blank" class="card-link">
+            Saiba mais
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </a>
+        </div>
+
+        <!-- Transferência -->
+        <div class="card reveal reveal-delay-4">
+          <div class="card-icon orange">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          </div>
+          <h3>Transferência</h3>
+          <p>Estuda em outra instituição de ensino superior? Solicite sua transferência para um dos cursos do Campus Cidade Ocidental.</p>
+          <div class="card-details">
+            <div class="card-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Transferência interna (entre cursos da UFG) ou externa</span>
+            </div>
+            <div class="card-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Aproveitamento de disciplinas já cursadas</span>
+            </div>
+            <div class="card-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Edital específico com prazos definidos semestralmente</span>
+            </div>
+          </div>
+          <a href="https://prograd.ufg.br" target="_blank" class="card-link">
+            Saiba mais
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </a>
+        </div>
+
+        <!-- Reservas de Vaga -->
+        <div class="card card-wide reveal">
+          <div class="card-icon shield">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3>Reservas de Vaga (Ações Afirmativas)</h3>
+          <p>A UFG destina vagas para candidatos de acordo com a Lei de Cotas e políticas de inclusão, garantindo diversidade e equidade no acesso ao ensino superior público.</p>
+
+          <div class="reservas-grid">
+            <div class="reserva-tag">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+              Escola Pública — 50% das vagas para estudantes de rede pública
+            </div>
+            <div class="reserva-tag">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+              Renda Familiar — Para famílias com renda per capita de até 1 salário mínimo
+            </div>
+            <div class="reserva-tag">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+              Cotas Raciais — Pretos, pardos e indígenas (PPI)
+            </div>
+            <div class="reserva-tag">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+              PcD — Pessoas com deficiência conforme legislação
+            </div>
+            <div class="reserva-tag">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+              Quilombolas — Vagas específicas para comunidades quilombolas
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- CURSOS                                                      -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <div class="module-card reveal reveal-scale" id="cursos">
+    <section class="section">
+      <div class="section-header reveal">
+        <span class="section-badge reveal">Graduação</span>
+        <h2 class="section-title">Nossos Cursos</h2>
+        <p class="section-subtitle">Conheça alguns dos nossos cursos de graduação oferecidos no Campus Cidade Ocidental — 100% gratuitos e com excelência reconhecida pelo MEC.</p>
+      </div>
+
+      <!-- Engenharia de Software -->
+      <div class="curso-card reveal" onclick="toggleCurso(this)">
+        <div class="curso-top">
+          <div class="curso-top-header">
+            <span class="curso-badge">Bacharelado</span>
+            <div class="curso-top-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </div>
+          </div>
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            Engenharia de Software
+          </h3>
+          <p>Forme-se para projetar, desenvolver e manter sistemas de software de alta qualidade. O curso aborda desde a concepção de requisitos até a entrega de soluções escaláveis que transformam negócios e a sociedade.</p>
+          <div class="curso-stats">
+            <div class="stat reveal reveal-delay-4"><div class="stat-value">R$ 8k–18k</div><div class="stat-label">Média salarial</div></div>
+            <div class="stat reveal reveal-delay-4"><div class="stat-value">8 sem.</div><div class="stat-label">Duração</div></div>
+            <div class="stat reveal reveal-delay-1"><div class="stat-value">Matutino · Noturno</div><div class="stat-label">Turno</div></div>
+          </div>
+        </div>
+
+        <div class="curso-body">
+          <div class="curso-sections">
+            <div class="curso-section">
+              <h4>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                Perfil Profissional
+              </h4>
+              <p style="font-size:.88rem;color:var(--gray);line-height:1.7;">Profissional capaz de liderar equipes de desenvolvimento, arquitetar soluções tecnológicas inovadoras e aplicar metodologias ágeis para entregar software de alta qualidade.</p>
+            </div>
+
+            <div class="curso-section">
+              <h4>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                Habilidades e Competências
+              </h4>
+              <div class="tags">
+                <span class="tag">Python</span><span class="tag">Java</span><span class="tag">Cloud Computing</span>
+                <span class="tag">DevOps</span><span class="tag">Arquitetura de Software</span><span class="tag">Metodologias Ágeis</span>
+                <span class="tag">Banco de Dados</span><span class="tag">IA/ML</span><span class="tag">APIs REST</span>
+                <span class="tag">Testes Automatizados</span>
+              </div>
+            </div>
+
+            <div class="curso-section">
+              <h4>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                Campo de Atuação
+              </h4>
+              <ul class="curso-list">
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Engenheiro(a) de Software</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Arquiteto(a) de Sistemas</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Dev Full-Stack / Back-end / Front-end</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Tech Lead / CTO</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Engenheiro(a) de Dados</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Consultor(a) de TI</li>
+              </ul>
+            </div>
+
+            <div class="curso-section">
+              <h4>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                Diferencial UFG
+              </h4>
+              <div class="diferencial">
+                <p>Laboratórios modernos, projetos de extensão com empresas parceiras, corpo docente com experiência de mercado e pesquisa, e um ecossistema de inovação que prepara o aluno para os desafios reais do mercado de tecnologia.</p>
+              </div>
+            </div>
+          </div>
+          <span class="salary-info">Fonte salarial: Glassdoor, CAGED, Indeed — valores médios para o Brasil (2024/2025).</span>
+        </div>
+      </div>
+
+      <!-- Engenharia da Cibersegurança -->
+      <div class="curso-card reveal" onclick="toggleCurso(this)">
+        <div class="curso-top" style="background: linear-gradient(135deg, #0D1B2A, #1B2838);">
+          <div class="curso-top-header">
+            <span class="curso-badge">Bacharelado</span>
+            <div class="curso-top-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </div>
+          </div>
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+            Engenharia da Cibersegurança
+          </h3>
+          <p>Torne-se especialista em proteger sistemas, redes e dados contra ameaças cibernéticas. O curso forma profissionais preparados para atuar na linha de frente da segurança digital.</p>
+          <div class="curso-stats">
+            <div class="stat reveal reveal-delay-2"><div class="stat-value">R$ 7k–20k</div><div class="stat-label">Média salarial</div></div>
+            <div class="stat reveal reveal-delay-3"><div class="stat-value">8 sem.</div><div class="stat-label">Duração</div></div>
+            <div class="stat reveal reveal-delay-4"><div class="stat-value">Matutino · Noturno</div><div class="stat-label">Turno</div></div>
+          </div>
+        </div>
+
+        <div class="curso-body">
+          <div class="curso-sections">
+            <div class="curso-section">
+              <h4>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                Perfil Profissional
+              </h4>
+              <p style="font-size:.88rem;color:var(--gray);line-height:1.7;">Profissional com pensamento analítico e ético, capaz de identificar vulnerabilidades, projetar arquiteturas seguras e responder a incidentes cibernéticos com eficiência e resiliência.</p>
+            </div>
+
+            <div class="curso-section">
+              <h4>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                Habilidades e Competências
+              </h4>
+              <div class="tags">
+                <span class="tag">Pentest</span><span class="tag">Redes e Protocolos</span><span class="tag">SOC / SIEM</span>
+                <span class="tag">LGPD / GDPR</span><span class="tag">Criptografia</span><span class="tag">Forense Digital</span>
+                <span class="tag">Cloud Security</span><span class="tag">Ethical Hacking</span><span class="tag">Firewall / IDS</span>
+                <span class="tag">Governança de TI</span>
+              </div>
+            </div>
+
+            <div class="curso-section">
+              <h4>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                Campo de Atuação
+              </h4>
+              <ul class="curso-list">
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Analista de Segurança da Informação</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Pentester / Red Team</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Engenheiro(a) de Segurança de Redes</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>CISO (Chief Information Security Officer)</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Perito(a) em Forense Digital</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Consultor(a) em Cibersegurança</li>
+              </ul>
+            </div>
+
+            <div class="curso-section">
+              <h4>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                Diferencial UFG
+              </h4>
+              <div class="diferencial">
+                <p>Primeiro curso de Engenharia da Cibersegurança em universidade pública no Centro-Oeste. Laboratórios especializados em segurança ofensiva e defensiva, parcerias com órgãos governamentais e preparação para certificações internacionais.</p>
+              </div>
+            </div>
+          </div>
+          <span class="salary-info">Fonte salarial: Glassdoor, CAGED, Indeed — valores médios para o Brasil (2024/2025).</span>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- EXTENSÃO                                                    -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <div class="module-card reveal reveal-scale" id="extensao">
+    <section class="section">
+      <div class="section-header reveal">
+        <span class="section-badge green reveal">Extensão</span>
+        <h2 class="section-title">Projetos de Extensão</h2>
+        <p class="section-subtitle">Atividades que conectam a universidade à comunidade, proporcionando experiência prática e impacto social real.</p>
+      </div>
+
+      <div class="ext-cards-grid">
+
+        <!-- Centro de Empreendedorismo -->
+        <div class="ext-card reveal reveal-delay-1">
+          <div class="ext-card-header">
+            <div class="ext-icon rocket">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h3>Centro de Empreendedorismo</h3>
+            <p>Espaço de fomento à inovação e ao empreendedorismo dentro da universidade. Desenvolve habilidades para criação de startups e novos negócios tecnológicos.</p>
+          </div>
+          <div class="ext-card-body">
+            <div class="ext-info">
+              <div class="ext-info-item">
+                <span class="ext-info-label">Objetivo</span>
+                <span class="ext-info-text">Estimular a cultura empreendedora entre os estudantes, promovendo mentoria, workshops e conexão com o ecossistema de inovação regional.</span>
+              </div>
+              <div class="ext-info-item">
+                <span class="ext-info-label">Público</span>
+                <span class="ext-info-text">Estudantes de todos os cursos do campus que desejam empreender ou desenvolver projetos inovadores.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Diálogos de Profissionalização -->
+        <div class="ext-card reveal reveal-delay-2">
+          <div class="ext-card-header">
+            <div class="ext-icon talk">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/></svg>
+            </div>
+            <h3>Diálogos de Profissionalização</h3>
+            <p>Ciclo de palestras e rodas de conversa com profissionais do mercado para preparar os estudantes para a transição universidade-carreira.</p>
+          </div>
+          <div class="ext-card-body">
+            <div class="ext-info">
+              <div class="ext-info-item">
+                <span class="ext-info-label">Objetivo</span>
+                <span class="ext-info-text">Aproximar o aluno do mercado de trabalho através de experiências reais, dicas de carreira e networking com profissionais atuantes.</span>
+              </div>
+              <div class="ext-info-item">
+                <span class="ext-info-label">Público</span>
+                <span class="ext-info-text">Estudantes de graduação em fase de formação profissional, aberto à comunidade externa.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Girls Tech -->
+        <div class="ext-card reveal reveal-delay-3">
+          <div class="ext-card-header">
+            <div class="ext-icon tech">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <h3>Girls Tech</h3>
+            <p>Programa de inclusão e empoderamento feminino na área de tecnologia, promovendo capacitação técnica e visibilidade para mulheres no setor.</p>
+          </div>
+          <div class="ext-card-body">
+            <div class="ext-info">
+              <div class="ext-info-item">
+                <span class="ext-info-label">Objetivo</span>
+                <span class="ext-info-text">Reduzir a desigualdade de gênero na tecnologia, oferecendo oficinas, mentorias e suporte para mulheres ingressarem e permanecerem na área.</span>
+              </div>
+              <div class="ext-info-item">
+                <span class="ext-info-label">Público</span>
+                <span class="ext-info-text">Mulheres estudantes de graduação, ensino médio e da comunidade interessadas em tecnologia.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- BENEFÍCIOS                                                  -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <div class="module-card reveal reveal-scale" id="beneficios">
+    <section class="section">
+      <div class="section-header reveal">
+        <span class="section-badge orange reveal">Assistência Estudantil</span>
+        <h2 class="section-title">Benefícios para Estudantes</h2>
+        <p class="section-subtitle">A UFG oferece diversos programas de apoio para garantir a permanência e o sucesso acadêmico dos estudantes em situação de vulnerabilidade.</p>
+      </div>
+
+      <div class="benefits-grid">
+
+        <div class="benefit-card reveal reveal-delay-1">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          </div>
+          <h3>Bolsa Moradia</h3>
+          <p>Auxílio financeiro para estudantes que residem fora de seu município de origem, ajudando com os custos de aluguel e moradia durante a graduação.</p>
+          <div class="benefit-meta">
+            <div class="benefit-meta-item">
+              <span class="meta-label">Público</span>
+              <span class="meta-text">Estudantes de baixa renda oriundos de outros municípios</span>
+            </div>
+            <div class="benefit-meta-item">
+              <span class="meta-label">Como</span>
+              <span class="meta-text">Inscrição via edital da PRAE com documentação comprobatória de renda</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="benefit-card reveal reveal-delay-2">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3>Bolsa para Estudantes Trans</h3>
+          <p>Programa de apoio financeiro voltado para estudantes transexuais e travestis em situação de vulnerabilidade social e econômica.</p>
+          <div class="benefit-meta">
+            <div class="benefit-meta-item">
+              <span class="meta-label">Público</span>
+              <span class="meta-text">Estudantes transexuais e travestis matriculados na UFG</span>
+            </div>
+            <div class="benefit-meta-item">
+              <span class="meta-label">Como</span>
+              <span class="meta-text">Processo seletivo via edital específico da Pró-Reitoria de Assuntos Estudantis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="benefit-card reveal reveal-delay-3">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          </div>
+          <h3>Apoio Pedagógico</h3>
+          <p>Acompanhamento especializado para estudantes com dificuldades acadêmicas, oferecendo tutoria, orientação e suporte psicopedagógico.</p>
+          <div class="benefit-meta">
+            <div class="benefit-meta-item">
+              <span class="meta-label">Público</span>
+              <span class="meta-text">Todos os estudantes de graduação que necessitem de acompanhamento</span>
+            </div>
+            <div class="benefit-meta-item">
+              <span class="meta-label">Como</span>
+              <span class="meta-text">Procurar o Núcleo de Acessibilidade ou coordenação do curso</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="benefit-card reveal reveal-delay-4">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+          <h3>Bolsa Alimentação</h3>
+          <p>Auxílio para custear a alimentação diária dos estudantes em vulnerabilidade socioeconômica que não possuem acesso a restaurante universitário.</p>
+          <div class="benefit-meta">
+            <div class="benefit-meta-item">
+              <span class="meta-label">Público</span>
+              <span class="meta-text">Estudantes em situação de vulnerabilidade socioeconômica comprovada</span>
+            </div>
+            <div class="benefit-meta-item">
+              <span class="meta-label">Como</span>
+              <span class="meta-text">Inscrição via edital da PRAE, com análise socioeconômica</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="benefit-card reveal reveal-delay-4">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3>Bolsa Canguru</h3>
+          <p>Auxílio para estudantes que são pais ou mães, ajudando com os custos de cuidado dos filhos para que possam permanecer nos estudos.</p>
+          <div class="benefit-meta">
+            <div class="benefit-meta-item">
+              <span class="meta-label">Público</span>
+              <span class="meta-text">Estudantes de graduação que possuem filhos dependentes</span>
+            </div>
+            <div class="benefit-meta-item">
+              <span class="meta-label">Como</span>
+              <span class="meta-text">Inscrição via edital específico, comprovando dependência e vínculo</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cta-banner reveal reveal-scale">
+        <h3>Precisa de mais informações?</h3>
+        <p>Acesse o portal da PRAE para conhecer todos os programas de assistência estudantil da UFG.</p>
+        <a href="https://prae.ufg.br" target="_blank" class="cta-btn">
+          Acessar PRAE
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- LOCALIZAÇÃO                                                 -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <div class="module-card reveal reveal-scale" id="localizacao">
+    <section class="section">
+      <div class="section-header reveal">
+        <span class="section-badge reveal">Localização</span>
+        <h2 class="section-title">Onde Estamos</h2>
+        <p class="section-subtitle">Conheça o Campus Cidade Ocidental da Universidade Federal de Goiás.</p>
+      </div>
+
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4127.648460755984!2d-47.930688!3d-16.1083525!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935985000e192d19%3A0x294b835a127702e5!2sUniversidade%20Federal%20de%20Goi%C3%A1s!5e1!3m2!1spt-BR!2sbr!4v1777060938655!5m2!1spt-BR!2sbr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Mapa UFG Campus Cidade Ocidental"></iframe>
+      </div>
+
+      <div class="info-bar">
+        <div class="info-item reveal reveal-delay-1">
+          <div class="info-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <div class="info-content">
+            <h4>Endereço</h4>
+            <p>Cidade Ocidental, Goiás — GO, Brasil</p>
+          </div>
+        </div>
+
+        <div class="info-item reveal reveal-delay-2">
+          <div class="info-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+          </div>
+          <div class="info-content">
+            <h4>Portal</h4>
+            <p><a href="https://cidadeocidental.ufg.br" target="_blank">cidadeocidental.ufg.br</a></p>
+          </div>
+        </div>
+
+        <div class="info-item reveal reveal-delay-3">
+          <div class="info-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <div class="info-content">
+            <h4>Contato</h4>
+            <p><a href="https://instagram.com/campusocidentalufg">@campusocidentalufg</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- FOOTER                                                      -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <div class="module-card reveal reveal-scale">
+    <footer>
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="https://files.cercomp.ufg.br/weby/assets/ufg2/marca-ufg-677b562915f50ba83e8e1516f068bde65a0e00330471068ad6320189ac9f140a.svg" alt="Logo UFG">
+            <span class="footer-logo-text">Campus<br>Cidade Ocidental</span>
+          </div>
+          <p>Universidade Federal de Goiás — Ensino público, gratuito e de excelência. Formando profissionais que transformam a sociedade.</p>
+          <div class="social-links">
+            <a href="https://instagram.com/campusocidentalufg" target="_blank" class="social-link" title="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UCVEN3bSdTJsYvDM0JfqerYA" target="_blank" class="social-link" title="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/ufg.oficial" target="_blank" class="social-link" title="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="https://cidadeocidental.ufg.br" target="_blank" class="social-link" title="Portal UFG">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Institucional</h4>
+          <a href="https://ufg.br" target="_blank">Portal UFG</a>
+          <a href="https://cidadeocidental.ufg.br" target="_blank">Campus Cidade Ocidental</a>
+          <a href="https://prograd.ufg.br" target="_blank">PROGRAD</a>
+          <a href="https://prae.ufg.br" target="_blank">PRAE</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <a href="https://instagram.com/campusocidentalufg" target="_blank">@campusocidentalufg</a>
+          <a href="https://cidadeocidental.ufg.br" target="_blank">cidadeocidental.ufg.br</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Universidade Federal de Goiás. Todos os direitos reservados.</p>
+        <a href="https://ufg.br" target="_blank">ufg.br</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Toggle curso modal
+    function toggleCurso(card) {
+      card.classList.toggle('open');
+    }
+
+    // Prevent clicks inside curso-body from toggling
+    document.querySelectorAll('.curso-body').forEach(body => {
+      body.addEventListener('click', e => e.stopPropagation());
+    });
+
+    // Navbar scroll behavior
+    const navbar = document.querySelector('.navbar');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+      navbar.style.opacity = (currentScroll > lastScroll && currentScroll > 100) ? '0.85' : '1';
+      lastScroll = currentScroll;
+    });
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('[id]');
+    const navLinks = document.querySelectorAll('.navbar-links a');
+
+    const navObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.style.color = '';
+            link.style.background = '';
+            if (link.getAttribute('href') === '#' + entry.target.id) {
+              link.style.color = 'var(--primary)';
+              link.style.background = 'var(--accent)';
+            }
+          });
+        }
+      });
+    }, { threshold: 0.4 });
+
+    sections.forEach(s => navObserver.observe(s));
+
+    // ── Scroll-reveal ────────────────────────────────────────────
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target); // anima só uma vez
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // ── Contador animado de estatísticas ─────────────────────────
+    function animateCount(el) {
+      const raw = el.textContent.trim();
+      const numMatch = raw.match(/[\d,.]+/);
+      if (!numMatch) return;
+      const suffix = raw.replace(numMatch[0], '');
+      const target = parseFloat(numMatch[0].replace(',', '.'));
+      const isFloat = numMatch[0].includes(',');
+      const duration = 900;
+      const start = performance.now();
+
+      function step(now) {
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const value = target * eased;
+        el.textContent = (isFloat ? value.toFixed(1).replace('.', ',') : Math.floor(value)) + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+
+    const statObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const valueEl = entry.target.querySelector('.stat-value');
+          if (valueEl) animateCount(valueEl);
+          statObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.stat').forEach(el => statObserver.observe(el));
+  </script>
+</body>
+</html>
